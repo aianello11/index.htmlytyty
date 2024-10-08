@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+@keyframes slide {
+
+from { left: 0; }
+
+to {left: 80%; }
+
+}
+.sliding_man {
+
+position: absolute;
+
+width: 300px;
+
+height: 300px;
+
+top: 0;
+
+background-image:url(purdueman.jpeg);
+
+background-size: contain;
+
+background-repeat: no-repeat;
+
+animation-duration: 5s;
+
+animation-name: slide;
+
+animation-iteration-count: infinite;
+z-index: 2;
+
+}
+@keyframes moving {
+  from {left:0%;top: 500px;}
+  to {left: 75%;}
+      }
+      .moving_logo {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 0;
+            background-image:url(CIT.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation-duration: 5s;
+            animation-name: moving;
+            animation-iteration-count: infinite;
+            z-index: 2;
+            }
+
+            .backdrop {
+                position:fixed;
+                width: 100%;
+                height:100%;
+                background-color:black;
+        
+            }
+
+         
+   </style>
+    
+</head>
+<body>
+    <div class="sliding_man"></div>
+
+    <div class="moving_logo"></div>
+   <div class= "backdrop"></div>
+
+   
+   
+   
+</body>
+</html>
